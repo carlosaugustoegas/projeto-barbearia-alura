@@ -1,0 +1,118 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background-color: #BBBBBB;
+    padding: 20px 0;
+}
+
+.caixa {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+
+}
+
+.produtos {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+
+
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+}
+
+.produtos li:hover {
+    border: 2px solid moccasin;
+}
+
+.produtos li:active {
+    border-color: green
+}
+
+.produtos li:hover h2 {
+    font-size: 34px;
+}
+
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descricao {
+    font-size: 18px;
+}
+
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+    
+}
+
+nav li {
+    display: inline;
+    margin:  0 0 0 15px; 
+}
+
+nav a:hover {
+    color: moccasin;
+    border-radius: 5px;
+    text-decoration: underline;
+
+}
+
+nav a {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    background: url(bg.jpg);
+    padding: 40px 0;
+}
+
+footer p.copyright {
+    color: white;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 480px) {
+    .caixa, .produtos, .produtos li, .conteudo-beneficios, .mapa-conteudo, .video {
+		width: auto;
+    }
+    h1 {
+		text-align: center;
+	}
+	nav {
+		position: static;
+	}
+    .produtos li {
+        display: block;
+        margin: 20px 0;
+    }
+}
