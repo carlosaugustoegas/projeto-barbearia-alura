@@ -1,0 +1,166 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background-color: #BBBBBB;
+    padding: 20px 0;
+}
+
+.caixa {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+    
+}
+
+nav li {
+    display: inline;
+    margin:  0 0 0 15px; 
+}
+
+nav a:hover {
+    color: moccasin;
+    border-radius: 5px;
+    text-decoration: underline;
+
+}
+
+nav a {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label, form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padrao {
+    display: block;
+    margin: 0 0 10px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+#checkbox {
+    margin: 20px 0;
+}
+
+#botao-enviar {
+    width: 40%;
+    padding: 15px 0;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.4s all;
+}
+
+#botao-enviar:hover {
+    background-color: orangered;
+    
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+table {
+    margin: 20px 0 40px;
+}
+
+thead {
+    background-color: grey;
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 8px 15px;
+}
+
+footer {
+    text-align: center;
+    background: url(bg.jpg);
+    padding: 40px 0;
+}
+
+footer p.copyright {
+    color: white;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 480px) {
+    .caixa, .formulario, main {
+        width: auto;
+    }
+    h1 {
+		text-align: center;
+	}
+	nav {
+		position: static;
+        margin: auto;
+        
+	}
+
+    .input-padrao {
+        width: 90%;
+        margin: auto;       
+    }
+
+    #botao-enviar {
+        width: 100%;
+        margin: auto;
+        text-align: center;  
+    }
+
+    table {
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    form label, legend {
+        text-align: center;
+        margin: 10px 0;
+        
+    }
+
+    legend {
+        padding: 10px;
+    }
+
+    fieldset label {
+        text-align: justify;
+        width: 50%;
+        margin: auto;
+    }
+
+
+    #horario-atendimento, select{
+        width: 85%;
+        margin: auto;
+        text-align: center;
+    }
+}
